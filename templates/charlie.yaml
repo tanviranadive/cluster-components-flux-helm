@@ -1,4 +1,4 @@
----
+{{- if .Values.charlie.enabled }}
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
@@ -28,3 +28,4 @@ spec:
     - name: bravo
   values:
     replicaCount: 1
+{{- end }}
