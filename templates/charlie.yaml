@@ -4,6 +4,13 @@ kind: HelmRepository
 metadata:
   name: charlie
   namespace: default
+  labels:
+    gwcp.guidewire.com/app-name: charlie
+    gwcp.guidewire.com/tenant-name: quadrant-shared
+    gwcp.guidewire.com/version: '6.5.1'
+    gwcp.guidewire.com/created-by: pod-avondale
+    gwcp.guidewire.com/maintained-by: pod-avondale
+    gwcp.guidewire.com/dept: '275'
 spec:
   interval: 10m0s
   url: https://stefanprodan.github.io/podinfo
@@ -13,6 +20,13 @@ kind: HelmRelease
 metadata:
   name: charlie
   namespace: default
+  labels:
+    gwcp.guidewire.com/app-name: charlie
+    gwcp.guidewire.com/tenant-name: quadrant-shared
+    gwcp.guidewire.com/version: '6.5.1'
+    gwcp.guidewire.com/created-by: pod-avondale
+    gwcp.guidewire.com/maintained-by: pod-avondale
+    gwcp.guidewire.com/dept: '275'
 spec:
   chart:
     spec:
