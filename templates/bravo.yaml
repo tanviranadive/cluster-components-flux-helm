@@ -37,6 +37,4 @@ spec:
         name: bravo
       version: '6.5.1'
   interval: 10m0s
-  values:
-    h2c:
-      enabled: true
+  values: {{ toYaml .Values.bravo.values | nindent 4 }}

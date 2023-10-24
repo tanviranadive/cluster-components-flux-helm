@@ -37,9 +37,7 @@ spec:
         name: alpha
       version: '6.5.1'
   interval: 10m0s
-  values:
-    h2c:
-      enabled: true
+  values: {{ toYaml .Values.alpha.values | nindent 4 }}
   postRenderers:
     - kustomize:
         # This doesn't work, `labels` isn't yet supported

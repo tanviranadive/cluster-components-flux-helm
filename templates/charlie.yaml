@@ -40,7 +40,5 @@ spec:
   dependsOn:
     - name: alpha
     - name: bravo
-  values:
-    h2c:
-      enabled: true
+  values: {{ toYaml .Values.charlie.values | nindent 4 }}
 {{- end }}
