@@ -10,7 +10,7 @@ metadata:
     gwcp.guidewire.com/version: '6.5.1'
     gwcp.guidewire.com/created-by: pod-avondale
     gwcp.guidewire.com/maintained-by: pod-avondale
-    gwcp.guidewire.com/dept: '275'
+    gwcp.guidewire.com/dept: {{ .Values.departmentCode | quote }}
 spec:
   interval: 10m0s
   url: https://stefanprodan.github.io/podinfo
@@ -26,7 +26,7 @@ metadata:
     gwcp.guidewire.com/version: '6.5.1'
     gwcp.guidewire.com/created-by: pod-avondale
     gwcp.guidewire.com/maintained-by: pod-avondale
-    gwcp.guidewire.com/dept: '275'
+    gwcp.guidewire.com/dept: {{ .Values.departmentCode | quote }}
 spec:
   chart:
     spec:
@@ -64,7 +64,7 @@ spec:
                 value: pod-avondale
               - op: replace
                 path: /metadata/labels/gwcp.guidewire.com~1dept
-                value: '275'
+                value: {{ .Values.departmentCode | quote }}
             target:
               name: .*
               kind: .*
@@ -86,7 +86,7 @@ spec:
                 value: pod-avondale
               - op: replace
                 path: /spec/template/metadata/labels/gwcp.guidewire.com~1dept
-                value: '275'
+                value: {{ .Values.departmentCode | quote }}
             target:
               name: .*
               kind: Deployment
