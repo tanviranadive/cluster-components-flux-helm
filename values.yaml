@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-departmentCode: "275"
+departmentCode: "1"
 
 alpha:
   values:
