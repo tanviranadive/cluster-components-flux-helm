@@ -5,7 +5,7 @@ metadata:
   name: charlie
   namespace: default
   labels:
-    atmos.guidewire.com/cluster-component: "true"
+    {{- include "components.labels" . | nindent 4 }}
     gwcp.guidewire.com/app-name: charlie
     gwcp.guidewire.com/tenant-name: quadrant-shared
     gwcp.guidewire.com/version: '6.5.1'
@@ -22,7 +22,7 @@ metadata:
   name: charlie
   namespace: default
   labels:
-    atmos.guidewire.com/cluster-component: "true"
+    {{- include "components.labels" . | nindent 4 }}
     gwcp.guidewire.com/app-name: charlie
     gwcp.guidewire.com/tenant-name: quadrant-shared
     gwcp.guidewire.com/version: '6.5.1'
