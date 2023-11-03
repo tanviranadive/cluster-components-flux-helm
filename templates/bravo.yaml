@@ -5,6 +5,7 @@ metadata:
   name: bravo
   namespace: default
   labels:
+    atmos.guidewire.com/cluster-component: "true"
     gwcp.guidewire.com/app-name: bravo
     gwcp.guidewire.com/tenant-name: quadrant-shared
     gwcp.guidewire.com/version: '6.5.1'
@@ -21,6 +22,7 @@ metadata:
   name: bravo
   namespace: default
   labels:
+    atmos.guidewire.com/cluster-component: "true"
     gwcp.guidewire.com/app-name: bravo
     gwcp.guidewire.com/tenant-name: quadrant-shared
     gwcp.guidewire.com/version: '6.5.1'
