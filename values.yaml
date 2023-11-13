@@ -16,7 +16,7 @@ bravo:
       enabled: true
 charlie:
   version: 6.5.1
-  enabled: true
+  enabled: false
   values:
     h2c:
       enabled: true
