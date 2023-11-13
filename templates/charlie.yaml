@@ -8,7 +8,7 @@ metadata:
     {{- include "components.labels" . | nindent 4 }}
     gwcp.guidewire.com/app-name: charlie
     gwcp.guidewire.com/tenant-name: quadrant-shared
-    gwcp.guidewire.com/version: '6.5.1'
+    gwcp.guidewire.com/version: {{ .Values.charlie.version | quote }}
     gwcp.guidewire.com/created-by: pod-avondale
     gwcp.guidewire.com/maintained-by: pod-avondale
     gwcp.guidewire.com/dept: {{ .Values.departmentCode | quote }}
@@ -25,7 +25,7 @@ metadata:
     {{- include "components.labels" . | nindent 4 }}
     gwcp.guidewire.com/app-name: charlie
     gwcp.guidewire.com/tenant-name: quadrant-shared
-    gwcp.guidewire.com/version: '6.5.1'
+    gwcp.guidewire.com/version: {{ .Values.charlie.version | quote }}
     gwcp.guidewire.com/created-by: pod-avondale
     gwcp.guidewire.com/maintained-by: pod-avondale
     gwcp.guidewire.com/dept: {{ .Values.departmentCode | quote }}
@@ -37,7 +37,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: charlie
-      version: '6.5.1'
+      version: {{ .Values.charlie.version | quote }}
   interval: 10m0s
   dependsOn:
     - name: alpha

@@ -5,15 +5,18 @@
 departmentCode: "1"
 
 alpha:
+  version: 6.5.1
   values:
     h2c:
       enabled: true
 bravo:
+  version: 6.5.1
   values:
     h2c:
       enabled: true
 charlie:
-  enabled: false
+  version: 6.5.1
+  enabled: true
   values:
     h2c:
       enabled: true
