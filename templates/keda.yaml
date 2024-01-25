@@ -1,6 +1,6 @@
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
-kind: GitRepository
+kind: HelmRepository
 metadata:
   name: keda-component-github
   namespace: default
@@ -19,9 +19,9 @@ metadata:
 spec:
   chart:
     spec:
-      chart: .
-      reconcileStrategy: Revision
+      chart: keda
+      reconcileStrategy: ChartVersion
       sourceRef:
-        kind: GitRepository
+        kind: HelmRepository
         name: keda-component-github
   interval: 10m0s
