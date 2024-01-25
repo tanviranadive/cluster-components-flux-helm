@@ -16,7 +16,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: keda
+      chart: keda_component
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
