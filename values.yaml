@@ -20,3 +20,5 @@ charlie:
   values:
     h2c:
       enabled: true
+keda:
+  version: 0.1.0
