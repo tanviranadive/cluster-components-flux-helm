@@ -21,4 +21,8 @@ charlie:
     h2c:
       enabled: true
 keda:
-  version: 0.1.0
+  version: 0.1.1
+  resources:
+    operator:
+      limits:
+        cpu: 100m
