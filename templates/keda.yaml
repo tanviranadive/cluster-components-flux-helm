@@ -23,3 +23,4 @@ spec:
         name: keda-component-github
       version: {{ .Values.keda.version | quote }}
   interval: 10m0s
+  values: {{ toYaml .Values.keda.values | nindent 4 }}
