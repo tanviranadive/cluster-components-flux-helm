@@ -6,7 +6,7 @@ metadata:
   namespace: default
 spec:
   interval: 10m0s
-  url: https://sundarok.github.io/keda-component
+  url: https://tanviranadive.github.io/keda-component
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
